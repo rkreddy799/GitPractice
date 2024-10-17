@@ -18,7 +18,8 @@ public class Second {
 		// TODO Auto-generated method stub
 				Set<String> windows=driver.getWindowHandles();
 	
-		
+				System.out.println(driver.findElement(By.cssSelector("[name='name']")).getRect().getHeight());
+				System.out.println(driver.findElement(By.cssSelector("[name='name']")).getRect().getDimension().getHeight());
 		
 		
 		//Taking screenshot of webelement

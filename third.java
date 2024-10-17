@@ -18,9 +18,7 @@ public class MultipleWindows {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
-		Iterator<String> it=windows.iterator();
-		String parentwindow=it.next();
-		String childwindow=it.next();
+		
 		driver.switchTo().window(childwindow);
 		driver.get("https://rahulshettyacademy.com/");
 		String courses=driver.findElements(By.cssSelector("a[href*='https://courses.rahulshettyacademy.com/p']")).get(3).getText();
