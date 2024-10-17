@@ -19,7 +19,7 @@ public class Second {
 				Set<String> windows=driver.getWindowHandles();
 	
 		
-		WebElement name=driver.findElement(By.cssSelector("[name='name']"));
+		
 		
 		//Taking screenshot of webelement
 		name.sendKeys(courses);
