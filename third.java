@@ -17,13 +17,7 @@ public class MultipleWindows {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("https://rahulshettyacademy.com/angularpractice/");
-		//opening new window/tab-both are possible
-		//driver.switchTo().newWindow(WindowType.WINDOW);
-		driver.switchTo().newWindow(WindowType.TAB);
-		Set<String> windows=driver.getWindowHandles();
+		
 		Iterator<String> it=windows.iterator();
 		String parentwindow=it.next();
 		String childwindow=it.next();
